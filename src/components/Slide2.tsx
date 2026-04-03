@@ -5,27 +5,27 @@ import { Code2, Server, Sparkles, Layers } from 'lucide-react';
 const achievements = [
   {
     icon: Code2,
-    title: "前端技术能力全面",
-    description: "43+各种前端项目让我前端技术栈全面，覆盖React、Vue等前端技术",
+    title: "前端技术体系成熟",
+    description: "拥有40+前端项目实战经验，熟练掌握 React、Vue 等主流前端技术，具备完整的前端工程化与业务落地能力。",
     tag: "前端"
   },
   {
     icon: Server,
-    title: "全栈独立开发能力",
-    description: "7+的服务端项目、独立构建产品逻辑、产品UI设计、服务器运维、商务技术对接足以体现具备从0到1的全栈能力",
+    title: "全栈独立交付能力",
+    description: "独立完成7+服务端项目，覆盖产品设计、架构开发、运维部署与技术对接，具备从0到1打造完整产品的全栈能力。",
     tag: "全栈"
   },
   {
     icon: Sparkles,
     title: "AI应用开发能力",
-    description: "跟进Openclaw、AutoSpace项目，掌握大模型应用开发,体现我对新技术新未来产品范式的追求",
+    description: "深度参与 Openclaw、AutoSpace 等 AI 项目，精通大模型应用开发，持续探索新一代产品技术范式。",
     tag: "AI"
   },
   {
     icon: Layers,
-    title: "项目经验积累",
-    description: "丰富的项目实战经验，我能够高效解决复杂技术问题",
-    tag: "经验"
+    title: "认同凹凸时空文化，融入团队大家庭",
+    description: "深度认同凹凸时空的企业文化与价值观，把团队当作共同成长的家庭，注重协作、责任与归属感，用软实力为团队创造长期价值。",
+    tag: "文化"
   }
 ];
 

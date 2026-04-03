@@ -5,33 +5,33 @@ import { Target, TrendingUp, Heart, Users, Briefcase, Award } from 'lucide-react
 const plans = [
   {
     icon: Target,
-    title: "能力规划",
-    description: "提供顶级前端技能支持，深耕技术、优化体验，保障开发质量。"
+    title: "前端深耕赋能",
+    description: "持续打磨顶尖前端技术能力，以专业实力为公司产品赋能，保障界面体验与开发质量。"
   },
   {
     icon: TrendingUp,
-    title: "全栈贯通",
-    description: "打通前后端，高效完成开发与联调，为团队分担核心压力。"
+    title: "全栈视野协同",
+    description: "以全栈技术视野贯通前后端逻辑，更好与服务端开发与联调，提升整体研发效率。"
   },
   {
     icon: Heart,
-    title: "多维角色",
-    description: "深入业务理解与产品设计，无缝跨部门协作。"
+    title: "产品业务深耕",
+    description: "深度理解业务逻辑与产品设计，具备跨角色思考能力，实现高效顺畅的跨部门协作。"
   },
   {
     icon: Users,
-    title: "AI 赋能与创新",
-    description: "主动探索 AI 应用开发，用工具赋能效率与业务创新，具备不破不立的精神。"
+    title: "AI 创新探索",
+    description: "持续跟进前沿AI技术与应用落地，用新技术为业务提效创新，保持突破与进取精神。"
   },
   {
     icon: Briefcase,
-    title: "职业理念",
-    description: "快速拆解任务、落地需求，全力以赴，不推诿、不敷衍、高效执行。"
+    title: "务实职业态度",
+    description: "高效拆解任务、快速落地需求，认真负责、不推诿不敷衍，以结果为导向执行。"
   },
   {
     icon: Award,
-    title: "拥抱进化",
-    description: "主动适应工作与技术变化，积极探索优化，助力团队成长。"
+    title: "与公司共成长",
+    description: "主动适应公司发展与技术迭代，同团队步调一致、同向而行，真正实现与公司融为一体、共同进化。"
   }
 ];
 
@@ -66,11 +66,11 @@ export function Slide4() {
           <div className="art-line mb-8" />
 
           <h2 className="font-art text-3xl md:text-4xl lg:text-5xl text-[#2D2A26] leading-[1.2] mb-6">
-            工作<span className="text-[#8B7355] italic">计划</span>
+            工作<span className="text-[#8B7355] italic">规划</span>
           </h2>
 
           <p className="font-['Source_Serif_4'] text-[#5C554A] leading-relaxed mb-6">
-            当前职业规划<br />与价值体现
+            一超多强<br />持续进化<br />态度理念
           </p>
 
           <div className="flex items-center gap-3">

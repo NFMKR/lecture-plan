@@ -5,33 +5,33 @@ import { Rocket, Sparkles, Globe, Lightbulb, ArrowUp, Crown } from 'lucide-react
 const visions = [
   {
     icon: Rocket,
-    title: "技术专家",
-    description: "持续深耕前端技术边界，探索AI与前端的深度融合，给公司创造更大价值"
+    title: "前端赋能未来",
+    description: "持续深耕前端技术壁垒，为公司打造更稳定、更前沿、更具竞争力的产品体验，让前端成为凹凸未来发展的重要引擎。"
   },
   {
     icon: Sparkles,
-    title: "AI赋能业务",
-    description: "将AI能力融入产品开发，用智能化工具提升团队效率与用户体验"
+    title: "AI赋能业务创新",
+    description: "将AI能力深度落地到业务，为公司提升研发效率、降低成本、创造智能化产品优势。"
   },
   {
     icon: Globe,
-    title: "全栈深化",
-    description: "构建更完整的技术视野，打通从前端到后端的全链路能力"
+    title: "全栈完美协同",
+    description: "以全栈视野打通前后端业务，提升团队整体交付速度，为公司减少内耗、加速迭代。"
   },
   {
     icon: Lightbulb,
-    title: "创新引领",
-    description: "保持技术敏感度，主动探索新趋势，为团队注入创新活力"
+    title: "业务创新突破",
+    description: "持续捕捉技术新趋势，为公司探索新方向、新场景，带来产品与业务上的增量突破。"
   },
   {
     icon: ArrowUp,
-    title: "价值跃升",
-    description: "从执行者向价值创造者转变，为业务增长贡献更多技术力量"
+    title: "价值持续跃升",
+    description: "不断迭代自身，并全栈承担凹凸官网等高质量项目，从执行层走向价值层，为公司业务增长贡献更强支撑。"
   },
   {
     icon: Crown,
-    title: "技术影响力",
-    description: "沉淀技术方法论，带动团队技术成长，建立个人技术品牌"
+    title: "长期共同发展",
+    description: "与公司目标同频、步调一致，用稳定成长为企业创造长期、可延续的核心价值，成为凹凸文化的践行者和传承者。"
   }
 ];
 
@@ -67,12 +67,9 @@ export function Slide3() {
           <div className="art-line mb-8" />
 
           <h2 className="font-art text-3xl md:text-4xl lg:text-5xl text-[#2D2A26] leading-[1.2] mb-6">
-            未来<span className="text-[#8B7355] italic">可期</span>
+            当下发力<br />
+            <span className="text-[#8B7355] italic">未来已来</span>
           </h2>
-
-          <p className="font-['Source_Serif_4'] text-[#5C554A] leading-relaxed mb-6">
-            未来可期的未来畅想<br />描绘职业发展蓝图
-          </p>
 
           <div className="flex items-center gap-3">
             <span className="w-6 h-[1px] bg-[#8B7355]/40" />

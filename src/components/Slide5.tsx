@@ -43,7 +43,7 @@ export function Slide5() {
           </div>
 
           <p className="font-['Source_Serif_4'] text-lg text-[#5C554A] mb-8">
-            请批评指正
+            如有不足持续指出，我愿与凹凸同频共行，共创未来
           </p>
 
           {/* 汇报人信息 */}
@@ -80,7 +80,7 @@ export function Slide5() {
             {/* 文字内容 */}
             <div className="p-8 md:p-10 text-center">
               <p className="font-art text-xl md:text-2xl text-[#2D2A26]">
-                与<span className="text-[#8B7355] italic">团队共同成长</span>
+                饮水思源<span className="text-[#8B7355] italic">共创未来</span>
               </p>
               <div className="mt-6 flex justify-center">
                 <div className="w-16 h-[1px] bg-[#8B7355]/30" />
