@@ -1,27 +1,27 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { Brain, Zap, ShieldCheck, Handshake, Gauge, Sparkles } from 'lucide-react';
+import { Brain, Zap, ShieldCheck, Handshake, BookOpen, Sparkles } from 'lucide-react';
 
 const strengths = [
+  {
+    icon: Zap,
+    title: '执行力强，靠谱稳定',
+    description: '接到任务不拖延、不敷衍，凡事有交代、件件有着落、事事有回音，是团队中可信赖的执行者。',
+  },
   {
     icon: Brain,
     title: '结构化思考',
     description: '能把复杂问题拆解成可执行的任务与里程碑，推动事情向前。',
   },
   {
-    icon: Zap,
-    title: '快速学习与落地',
-    description: '对新技术保持敏感，能在短周期内形成可交付方案并上线验证。',
+    icon: BookOpen,
+    title: '学习能力强，适应速度快',
+    description: '面对新业务、新要求能够快速理解、快速上手，主动补齐短板，不依赖他人反复指导。',
   },
   {
     icon: ShieldCheck,
-    title: '质量与稳定性意识',
-    description: '关注可维护性、边界与风险控制，交付更稳、后期成本更低。',
-  },
-  {
-    icon: Gauge,
-    title: '效率与工程化',
-    description: '擅长做工具与流程优化，让重复劳动变少，让协作更顺滑。',
+    title: '责任心强，有大局意识',
+    description: '对待工作认真细致，出现问题主动承担、积极解决，不甩锅、不抱怨，优先保障团队与业务目标。',
   },
   {
     icon: Handshake,
@@ -30,10 +30,12 @@ const strengths = [
   },
   {
     icon: Sparkles,
-    title: '积极主动与责任感',
-    description: '敢接硬任务、主动补位，用结果证明价值，持续争取更大贡献。',
+    title: '快速学习与落地',
+    description: '对新技术保持敏感，能在短周期内形成可交付方案并上线验证。',
   },
 ];
+
+
 
 export function Slide5() {
   const [isVisible, setIsVisible] = useState(false);

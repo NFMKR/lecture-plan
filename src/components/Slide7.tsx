@@ -71,7 +71,7 @@ export function Slide7() {
 
             <div className="p-8 md:p-10 text-center">
               <p className="font-art text-xl md:text-2xl text-[#2D2A26]">
-                饮水思源<span className="text-[#8B7355] italic">共创未来</span>
+                同频而行<span className="text-[#8B7355] italic">共创未来</span>
               </p>
               <div className="mt-6 flex justify-center">
                 <div className="w-16 h-[1px] bg-[#8B7355]/30" />

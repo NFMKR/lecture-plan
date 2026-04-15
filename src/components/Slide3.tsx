@@ -1,27 +1,37 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { Code2, Server, Sparkles, TrendingUp } from 'lucide-react';
+import { CheckCircle, Zap, Users, BookOpen, Code2, Heart } from 'lucide-react';
 
 const achievements = [
   {
+    icon: CheckCircle,
+    title: '任务高效落地',
+    description: '保障业务稳定推进，确保各项任务按时高质量完成。',
+  },
+  {
+    icon: Zap,
+    title: '问题解决与持续优化',
+    description: '工作效率提升，主动发现并解决问题，持续优化工作流程。',
+  },
+  {
+    icon: Users,
+    title: '协作与责任担当',
+    description: '积极配合跨部门/跨岗位协作，主动补位，不推诿、不拖延。在团队需要时主动承担额外工作，保障整体目标顺利完成。',
+  },
+  {
+    icon: BookOpen,
+    title: '个人能力快速成长',
+    description: '快速熟悉业务逻辑、制度规范与工作标准，独立处理复杂事项的能力明显提升。在实践中沉淀了一套可复用的工作方法，形成自己的工作节奏与优势。',
+  },
+  {
     icon: Code2,
-    title: '交付质量与工程化',
-    description: '通过工程化规范、组件沉淀与体验打磨，提升交付一致性与迭代效率。',
+    title: '技术能力全面',
+    description: '前端技术能力强大，全面的全栈开发能力无短板，有着前沿的AI应用开发能力。',
   },
   {
-    icon: Sparkles,
-    title: 'AI 能力落地与提效',
-    description: '探索并落地大模型应用方案，把“可用”推进到“可复用、可规模化”。',
-  },
-  {
-    icon: Server,
-    title: '全栈协同与端到端闭环',
-    description: '从需求理解到上线交付形成闭环，降低联调成本与沟通损耗。',
-  },
-  {
-    icon: TrendingUp,
-    title: '业务价值表达与可量化',
-    description: '把成果与指标挂钩，用“问题-方案-收益”展示价值，让贡献更可见。',
+    icon: Code2,
+    title: '前端能力沉淀',
+    description: '作作为团队专职前端负责人，独立承担全流程前端开发与 UI 界面实现工作，持续沉淀可复用组件库与统一设计规范，逐步构建起完整、可扩展的前端技术体系。',
   }
 ];
 
