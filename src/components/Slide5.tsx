@@ -1,5 +1,39 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { Brain, Zap, ShieldCheck, Handshake, Gauge, Sparkles } from 'lucide-react';
+
+const strengths = [
+  {
+    icon: Brain,
+    title: '结构化思考',
+    description: '能把复杂问题拆解成可执行的任务与里程碑，推动事情向前。',
+  },
+  {
+    icon: Zap,
+    title: '快速学习与落地',
+    description: '对新技术保持敏感，能在短周期内形成可交付方案并上线验证。',
+  },
+  {
+    icon: ShieldCheck,
+    title: '质量与稳定性意识',
+    description: '关注可维护性、边界与风险控制，交付更稳、后期成本更低。',
+  },
+  {
+    icon: Gauge,
+    title: '效率与工程化',
+    description: '擅长做工具与流程优化，让重复劳动变少，让协作更顺滑。',
+  },
+  {
+    icon: Handshake,
+    title: '协作推动',
+    description: '善于对齐目标与共识，沟通清晰，能推动跨角色协作闭环。',
+  },
+  {
+    icon: Sparkles,
+    title: '积极主动与责任感',
+    description: '敢接硬任务、主动补位，用结果证明价值，持续争取更大贡献。',
+  },
+];
 
 export function Slide5() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +66,8 @@ export function Slide5() {
           <div className="art-line mb-8" />
 
           <h2 className="font-art text-4xl md:text-5xl lg:text-6xl text-[#2D2A26] leading-[1.2] mb-8">
-            感谢<span className="text-[#8B7355] italic">聆听</span>
+            自身优势与
+            <span className="text-[#8B7355] italic">闪光点</span>
           </h2>
 
           {/* 分隔装饰 */}
@@ -43,49 +78,37 @@ export function Slide5() {
           </div>
 
           <p className="font-['Source_Serif_4'] text-lg text-[#5C554A] mb-8">
-            如有不足持续指出，我愿与凹凸同频共行，共创未来
+            以结果交付为底，以持续成长为上限
           </p>
-
-          {/* 汇报人信息 */}
-          <div className="flex items-center gap-4">
-            <span className="font-art-display text-[10px] text-[#8B7355]/60 tracking-[0.3em]">
-              汇报人
-            </span>
-            <span className="w-[1px] h-8 bg-[#8B7355]/20 rotate-12" />
-            <span className="font-art text-xl text-[#2D2A26]">
-              郭鹏杰
-            </span>
-          </div>
         </motion.div>
 
-        {/* 右侧 - 液态卡片图片 */}
+        {/* 右侧 - 液态卡片网格 */}
         <motion.div 
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 60 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="w-[65%] pl-12"
         >
-          <div className="liquid-card liquid-card-hover rounded-2xl overflow-hidden">
-            {/* 图片区域 */}
-            <div className="relative h-80 md:h-96 overflow-hidden">
-              <img 
-                src="https://7472-tryonapi-9g4f859qef540221-1395010318.tcb.qcloud.la/screenshots/213.jpg" 
-                alt="Thank You" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#2D2A26]/30 to-transparent" />
-            </div>
-            
-            {/* 文字内容 */}
-            <div className="p-8 md:p-10 text-center">
-              <p className="font-art text-xl md:text-2xl text-[#2D2A26]">
-                饮水思源<span className="text-[#8B7355] italic">共创未来</span>
-              </p>
-              <div className="mt-6 flex justify-center">
-                <div className="w-16 h-[1px] bg-[#8B7355]/30" />
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {strengths.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
+                transition={{ duration: 0.8, delay: 0.5 + index * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                className="liquid-card liquid-card-hover rounded-xl p-6 md:p-8"
+              >
+                <div className="mb-4">
+                  <item.icon strokeWidth={1.5} className="w-8 h-8 text-[#8B7355]" />
+                </div>
+                <h3 className="font-art text-lg md:text-xl text-[#2D2A26] mb-3">
+                  {item.title}
+                </h3>
+                <p className="font-['Source_Serif_4'] text-sm text-[#5C554A] leading-relaxed">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>
@@ -93,7 +116,7 @@ export function Slide5() {
       {/* 页码指示 */}
       <div className="absolute bottom-8 left-8 md:left-16">
         <span className="font-art-display text-[10px] text-[#8B7355]/40 tracking-[0.4em]">
-          05 / 05
+          05 / 07
         </span>
       </div>
     </div>

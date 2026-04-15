@@ -1,37 +1,27 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { Rocket, Sparkles, Globe, Lightbulb, ArrowUp, Crown } from 'lucide-react';
+import { Code2, Server, Sparkles, TrendingUp } from 'lucide-react';
 
-const visions = [
+const achievements = [
   {
-    icon: Rocket,
-    title: "前端赋能未来",
-    description: "持续深耕前端技术壁垒，为公司打造更稳定、更前沿、更具竞争力的产品体验，让前端成为凹凸未来发展的重要引擎。"
+    icon: Code2,
+    title: '交付质量与工程化',
+    description: '通过工程化规范、组件沉淀与体验打磨，提升交付一致性与迭代效率。',
   },
   {
     icon: Sparkles,
-    title: "AI赋能业务创新",
-    description: "将AI能力深度落地到业务，为公司提升研发效率、降低成本、创造智能化产品优势。"
+    title: 'AI 能力落地与提效',
+    description: '探索并落地大模型应用方案，把“可用”推进到“可复用、可规模化”。',
   },
   {
-    icon: Globe,
-    title: "全栈完美协同",
-    description: "以全栈视野打通前后端业务，提升团队整体交付速度，为公司减少内耗、加速迭代。"
+    icon: Server,
+    title: '全栈协同与端到端闭环',
+    description: '从需求理解到上线交付形成闭环，降低联调成本与沟通损耗。',
   },
   {
-    icon: Lightbulb,
-    title: "业务创新突破",
-    description: "持续捕捉技术新趋势，为公司探索新方向、新场景，带来产品与业务上的增量突破。"
-  },
-  {
-    icon: ArrowUp,
-    title: "价值持续跃升",
-    description: "不断迭代自身，并全栈承担凹凸官网等高质量项目，从执行层走向价值层，为公司业务增长贡献更强支撑。"
-  },
-  {
-    icon: Crown,
-    title: "长期共同发展",
-    description: "与公司目标同频、步调一致，用稳定成长为企业创造长期、可延续的核心价值，成为凹凸文化的践行者和传承者。"
+    icon: TrendingUp,
+    title: '业务价值表达与可量化',
+    description: '把成果与指标挂钩，用“问题-方案-收益”展示价值，让贡献更可见。',
   }
 ];
 
@@ -58,18 +48,22 @@ export function Slide3() {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -40 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="w-[32%] pr-10"
+          className="w-[35%] pr-10"
         >
           <span className="font-art-display text-xs text-[#8B7355]/60 tracking-[0.4em] block mb-8">
-            04
+            03
           </span>
 
           <div className="art-line mb-8" />
 
           <h2 className="font-art text-3xl md:text-4xl lg:text-5xl text-[#2D2A26] leading-[1.2] mb-6">
-            当下发力<br />
-            <span className="text-[#8B7355] italic">未来已来</span>
+            工作成果与<br />
+            <span className="text-[#8B7355] italic">价值体现</span>
           </h2>
+
+          <p className="font-['Source_Serif_4'] text-[#5C554A] leading-relaxed mb-6">
+            以结果为导向，沉淀可复用能力
+          </p>
 
           <div className="flex items-center gap-3">
             <span className="w-6 h-[1px] bg-[#8B7355]/40" />
@@ -83,39 +77,30 @@ export function Slide3() {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 60 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="w-[68%] pl-10"
+          className="w-[65%] pl-10"
         >
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {visions.map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {achievements.map((item, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-                transition={{ duration: 0.6, delay: 0.4 + index * 0.08, ease: [0.16, 1, 0.3, 1] }}
-                whileHover={{ y: -6 }}
-                className="liquid-card rounded-xl p-5 md:p-6 text-center cursor-default"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 30 }}
+                transition={{ duration: 0.8, delay: 0.5 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                className="liquid-card liquid-card-hover rounded-xl p-6 md:p-8"
               >
-                {/* 图标 */}
-                <div className="mb-4 flex justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#8B7355]/10 flex items-center justify-center">
-                    <item.icon strokeWidth={1.5} className="w-5 h-5 text-[#8B7355]" />
-                  </div>
+                <div className="mb-4">
+                  <item.icon strokeWidth={1.5} className="w-8 h-8 text-[#8B7355]" />
                 </div>
 
                 {/* 标题 */}
-                <h3 className="font-art text-base md:text-lg text-[#2D2A26] mb-2">
+                <h3 className="font-art text-lg md:text-xl text-[#2D2A26] mb-3">
                   {item.title}
                 </h3>
 
                 {/* 描述 */}
-                <p className="font-['Source_Serif_4'] text-xs md:text-sm text-[#5C554A] leading-relaxed">
+                <p className="font-['Source_Serif_4'] text-sm text-[#5C554A] leading-relaxed">
                   {item.description}
                 </p>
-
-                {/* 底部装饰 */}
-                <div className="mt-4 flex justify-center">
-                  <div className="w-8 h-[1px] bg-[#8B7355]/20" />
-                </div>
               </motion.div>
             ))}
           </div>
@@ -125,7 +110,7 @@ export function Slide3() {
       {/* 页码指示 */}
       <div className="absolute bottom-8 left-8 md:left-16">
         <span className="font-art-display text-[10px] text-[#8B7355]/40 tracking-[0.4em]">
-          04 / 05
+          03 / 07
         </span>
       </div>
     </div>

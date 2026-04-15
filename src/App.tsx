@@ -4,15 +4,19 @@ import { Slide2 } from './components/Slide2';
 import { Slide3 } from './components/Slide3';
 import { Slide4 } from './components/Slide4';
 import { Slide5 } from './components/Slide5';
+import { Slide6 } from './components/Slide6';
+import { Slide7 } from './components/Slide7';
 import { SlideNavigation } from './components/SlideNavigation';
 import { useSlideNavigation } from './hooks/useSlideNavigation';
 
 const slides = [
   <Slide1 key="slide1" />,
   <Slide2 key="slide2" />,
-  <Slide4 key="slide4" />,
   <Slide3 key="slide3" />,
-  <Slide5 key="slide5" />
+  <Slide4 key="slide4" />,
+  <Slide5 key="slide5" />,
+  <Slide6 key="slide6" />,
+  <Slide7 key="slide7" />,
 ];
 
 const slideVariants = {
