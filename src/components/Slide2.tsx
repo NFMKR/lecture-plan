@@ -117,7 +117,7 @@ const timeline: TimelineItem[] = [
       '独立负责项目能力、端到端开发思维、从产品/设计/前端/后端/运维全链路实践能力',
       '未来在这类项目中融入更多用户体验思维，做出更好的产品',
     ],
-    icon: Wrench,
+    imageSrc: 'https://7472-tryonapi-9g4f859qef540221-1395010318.tcb.qcloud.la/zygh/logo.png',
   },
   {
     id: '2026-03-ai-app',
@@ -492,6 +492,16 @@ export function Slide2() {
                           <div className="h-[1px] flex-1 bg-gradient-to-r from-[#8B7355]/15 to-transparent" />
                         </div>
                         <h3 className="font-art text-lg text-[#2D2A26] mb-3">{item.title}</h3>
+                        {item.imageSrc && (
+                          <div className="mb-4 flex justify-center">
+                            <img
+                              src={item.imageSrc}
+                              alt={item.shortTitle}
+                              className="w-16 h-16 rounded-full object-cover"
+                              referrerPolicy="no-referrer"
+                            />
+                          </div>
+                        )}
                         <ul className="space-y-2">
                           {item.points.map((p) => (
                             <li key={p} className="flex items-start gap-3">
